@@ -1,0 +1,5 @@
+class P {
+    void M() {
+        ;
+    }
+}
