@@ -2,12 +2,14 @@
 {
 } // end of class <Module>
 
-.class private auto ansi beforefieldinit Program
+.class private auto ansi beforefieldinit P
     extends [System.Private.CoreLib]System.Object
 {
     // Methods
-    .method private hidebysig 
-        instance void Main () cil managed 
+    .method private hidebysig static 
+        void Main (
+            string[] args
+        ) cil managed 
     {
         // Method begins at RVA 0x2050
         // Code size 13 (0xd)
@@ -18,7 +20,7 @@
         IL_0006: call void [System.Console]System.Console::WriteLine(string)
         IL_000b: nop
         IL_000c: ret
-    } // end of method Program::Main
+    } // end of method P::Main
 
     .method private hidebysig 
         instance int32 Length () cil managed 
@@ -43,7 +45,7 @@
 
         IL_000e: ldloc.1
         IL_000f: ret
-    } // end of method Program::Length
+    } // end of method P::Length
 
     .method public hidebysig specialname rtspecialname 
         instance void .ctor () cil managed 
@@ -56,7 +58,7 @@
         IL_0001: call instance void [System.Private.CoreLib]System.Object::.ctor()
         IL_0006: nop
         IL_0007: ret
-    } // end of method Program::.ctor
+    } // end of method P::.ctor
 
-} // end of class Program
+} // end of class P
 
