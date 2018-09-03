@@ -1,14 +1,14 @@
-const int ELEMENT_COUNT = 30;
-uint[] uintArray = new uint[ELEMENT_COUNT];
-List<uint> uintList = new List<uint>();
+using System;
+using System.Linq;
 
-for (int i = 0; i < ELEMENT_COUNT; ++i) {
-    uintArray[i] = (uint)i;
-    uintList.Add((uint)i);
+class P {
+    public void M1() {
+        var range = Enumerable.Range(0, 10);
+        var s1 = range.ToArray().Cast<uint>().Sum(x => x);
+    }
+
+    public void M2() {
+        var range = Enumerable.Range(0, 10);
+        var s2 = range.ToList().Cast<uint>().Sum(x => x);
+    }
 }
-
-var intEnumerable = uintArray.Cast<int>();
-Console.WriteLine(intEnumerable.Count());
-
-intEnumerable = uintList.Cast<int>();
-Console.WriteLine(intEnumerable.Count());
