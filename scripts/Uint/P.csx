@@ -1,9 +1,9 @@
 #! "netcoreapp2.1"
-#r "nuget:BenchmarkDotNet,0.11.1"
-
+#r "nuget:BenchmarkDotNet,0.11.0"
 
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Horology;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 
@@ -18,16 +18,19 @@ BenchmarkRunner.Run<U>();
       B |     5 | 0.0000 ns | 0.0000 ns | 0.0000 ns |       0 B |
  */
 
-public class Config : ManualConfig {
-    public Config() {
-        Add(Job.DryCore
+public class ConfigX : ManualConfig {
+    public ConfigX() {
+        Add(Job.Dry
+            .WithWarmupCount(1)
+            .WithMinIterationTime(TimeInterval.FromMicroseconds(100))
+            .WithMinIterationCount(1)
             .WithLaunchCount(1));
     }
 }
 
 [InProcess]
 [MemoryDiagnoser]
-// [Config(typeof(Config))]
+[Config(typeof(ConfigX))]
 public class U {
     int _size = 10;
 
