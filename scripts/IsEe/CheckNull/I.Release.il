@@ -10,13 +10,12 @@
         instance void .ctor () cil managed 
     {
         // Method begins at RVA 0x2050
-        // Code size 8 (0x8)
+        // Code size 7 (0x7)
         .maxstack 8
 
         IL_0000: ldarg.0
         IL_0001: call instance void [System.Private.CoreLib]System.Object::.ctor()
-        IL_0006: nop
-        IL_0007: ret
+        IL_0006: ret
     } // end of method A::.ctor
 
 } // end of class A
@@ -26,11 +25,11 @@
 {
     // Methods
     .method private hidebysig 
-        instance bool Isss (
+        instance bool StringIs (
             string s
         ) cil managed 
     {
-        // Method begins at RVA 0x2059
+        // Method begins at RVA 0x2058
         // Code size 5 (0x5)
         .maxstack 8
 
@@ -38,14 +37,14 @@
         IL_0001: ldnull
         IL_0002: ceq
         IL_0004: ret
-    } // end of method P::Isss
+    } // end of method P::StringIs
 
     .method private hidebysig 
-        instance bool Eeee (
+        instance bool StringEq (
             string s
         ) cil managed 
     {
-        // Method begins at RVA 0x2059
+        // Method begins at RVA 0x2058
         // Code size 5 (0x5)
         .maxstack 8
 
@@ -53,14 +52,14 @@
         IL_0001: ldnull
         IL_0002: ceq
         IL_0004: ret
-    } // end of method P::Eeee
+    } // end of method P::StringEq
 
     .method private hidebysig 
-        instance bool ObjIsss (
+        instance bool ObjectIs (
             object s
         ) cil managed 
     {
-        // Method begins at RVA 0x2059
+        // Method begins at RVA 0x2058
         // Code size 5 (0x5)
         .maxstack 8
 
@@ -68,14 +67,14 @@
         IL_0001: ldnull
         IL_0002: ceq
         IL_0004: ret
-    } // end of method P::ObjIsss
+    } // end of method P::ObjectIs
 
     .method private hidebysig 
-        instance bool ObjEeee (
+        instance bool ObjectEq (
             object s
         ) cil managed 
     {
-        // Method begins at RVA 0x2059
+        // Method begins at RVA 0x2058
         // Code size 5 (0x5)
         .maxstack 8
 
@@ -83,14 +82,14 @@
         IL_0001: ldnull
         IL_0002: ceq
         IL_0004: ret
-    } // end of method P::ObjEeee
+    } // end of method P::ObjectEq
 
     .method private hidebysig 
-        instance bool AIsss (
+        instance bool AIs (
             class A s
         ) cil managed 
     {
-        // Method begins at RVA 0x2059
+        // Method begins at RVA 0x2058
         // Code size 5 (0x5)
         .maxstack 8
 
@@ -98,14 +97,14 @@
         IL_0001: ldnull
         IL_0002: ceq
         IL_0004: ret
-    } // end of method P::AIsss
+    } // end of method P::AIs
 
     .method private hidebysig 
-        instance bool AEeee (
+        instance bool AEq (
             class A s
         ) cil managed 
     {
-        // Method begins at RVA 0x2059
+        // Method begins at RVA 0x2058
         // Code size 5 (0x5)
         .maxstack 8
 
@@ -113,19 +112,18 @@
         IL_0001: ldnull
         IL_0002: ceq
         IL_0004: ret
-    } // end of method P::AEeee
+    } // end of method P::AEq
 
     .method public hidebysig specialname rtspecialname 
         instance void .ctor () cil managed 
     {
         // Method begins at RVA 0x2050
-        // Code size 8 (0x8)
+        // Code size 7 (0x7)
         .maxstack 8
 
         IL_0000: ldarg.0
         IL_0001: call instance void [System.Private.CoreLib]System.Object::.ctor()
-        IL_0006: nop
-        IL_0007: ret
+        IL_0006: ret
     } // end of method P::.ctor
 
 } // end of class P
