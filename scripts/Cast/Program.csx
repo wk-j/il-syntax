@@ -1,3 +1,5 @@
 var range = Enumerable.Range(0, 10);
-var s1 = range.ToArray().Cast<uint>().Sum(x => x);
-var s2 = range.ToList().Cast<uint>().Sum(x => x);
+var array = range.ToArray();
+
+var s1 = array.Cast<uint>().Sum(x => x); // 45
+var s2 = range.Cast<uint>().Sum(x => x); // System.InvalidCastException

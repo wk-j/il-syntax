@@ -17,11 +17,9 @@ IEnumerable<TResult> CastIterator<TResult>(IEnumerable source) {
 }
 
 var uArray = new uint[10];
-// var iArray = (int[])uArray;
-// var b = (List<int>)uArray;
 var uList = uArray.ToList();
 
 var a = (int[])(object)uArray;
 
 var y = Cast<int>(uArray).Sum();
-var z = Cast<int>(uList).Sum();
+//var z = Cast<int>(uList).Sum();
