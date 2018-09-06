@@ -4,6 +4,7 @@ node_modules
 dist
 .cache
 
+.vs
 bin
 obj
 packages
@@ -14,5 +15,6 @@ publish
 .settings
 .classpath
 .project
+*.exe
 target
 BenchmarkDotNet.Artifacts

@@ -1,0 +1,6 @@
+source https://www.nuget.org/api/v2
+
+framework: netcoreapp2.1
+// nuget runtime.osx.10.10-x64.Microsoft.NETCore.ILAsm
+nuget Microsoft.NETCore.ILAsm
+nuget runtime.osx-x64.Microsoft.NETCore.ILAsm

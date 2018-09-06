@@ -1,0 +1,9 @@
+RESTRICTION: == netcoreapp2.1
+NUGET
+  remote: https://www.nuget.org/api/v2
+    Microsoft.NETCore.ILAsm (2.0.8)
+      Microsoft.NETCore.Runtime.CoreCLR (>= 2.0.8)
+    Microsoft.NETCore.Jit (2.0.8)
+    Microsoft.NETCore.Runtime.CoreCLR (2.0.8)
+      Microsoft.NETCore.Jit (>= 2.0.8)
+    runtime.osx-x64.Microsoft.NETCore.ILAsm (2.0.8)
