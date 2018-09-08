@@ -16,3 +16,4 @@ publish
 .project
 target
 BenchmarkDotNet.Artifacts
+.output
